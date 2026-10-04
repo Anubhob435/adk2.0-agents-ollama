@@ -1,8 +1,10 @@
 import json
+import os
+
 import requests
 
 # Ngrok endpoint URL (note: remove trailing slash if present)
-url = "https://4894-34-125-62-10.ngrok-free.app/api/chat"
+url = os.environ.get("OLLAMA_API_BASE", "http://localhost:11434").rstrip("/") + "/api/chat"
 
 # Request headers (ngrok-skip-browser-warning avoids the free-tier interstitial page)
 headers = {

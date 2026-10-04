@@ -1,10 +1,11 @@
 [project]
 name = "code"
 version = "0.1.0"
-description = "Add your description here"
+description = "Multi-agent orchestrator built with Google ADK 2.x on a self-hosted Ollama model"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "google-adk>=2.10.0",
     "litellm>=1.103.2",
+    "requests>=2.32.0",
 ]
