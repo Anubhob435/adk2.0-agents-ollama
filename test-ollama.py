@@ -12,7 +12,7 @@ headers = {
 
 # Payload
 payload = {
-    "model": "gemma3:12b",
+    "model": "gemma4:12b",
     "messages": [
         {
             "role": "user",
