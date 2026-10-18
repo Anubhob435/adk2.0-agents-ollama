@@ -5,9 +5,7 @@ from google.adk.models.lite_llm import LiteLlm
 
 # Ngrok base URL of the remote Ollama server (no trailing slash, no /api/chat).
 # Override with OLLAMA_API_BASE in orchestrator/.env since free ngrok URLs change.
-OLLAMA_API_BASE = os.getenv(
-    'OLLAMA_API_BASE', 'https://6699-136-85-135-191.ngrok-free.app'
-)
+OLLAMA_API_BASE = os.environ['OLLAMA_API_BASE']
 
 POEM_FORMS = {
     'haiku': '3 lines with 5, 7, 5 syllables. No rhyme required; focus on nature or a moment.',

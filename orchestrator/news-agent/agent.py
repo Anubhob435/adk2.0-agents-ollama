@@ -6,9 +6,7 @@ from datetime import datetime
 from google.adk.agents.llm_agent import Agent
 from google.adk.models.lite_llm import LiteLlm
 
-OLLAMA_API_BASE = os.getenv(
-    'OLLAMA_API_BASE', 'https://6699-136-85-135-191.ngrok-free.app'
-)
+OLLAMA_API_BASE = os.environ['OLLAMA_API_BASE']
 
 
 def search_news(query: str, country: str = 'in', time_range: str = 'w') -> dict:

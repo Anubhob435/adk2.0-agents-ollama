@@ -411,12 +411,14 @@ source = { virtual = "." }
 dependencies = [
     { name = "google-adk" },
     { name = "litellm" },
+    { name = "requests" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "google-adk", specifier = ">=2.10.0" },
     { name = "litellm", specifier = ">=1.103.2" },
+    { name = "requests", specifier = ">=2.32.0" },
 ]
 
 [[package]]

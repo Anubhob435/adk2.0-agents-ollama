@@ -3,9 +3,7 @@ import os
 from google.adk.agents.llm_agent import Agent
 from google.adk.models.lite_llm import LiteLlm
 
-OLLAMA_API_BASE = os.getenv(
-    'OLLAMA_API_BASE', 'https://6699-136-85-135-191.ngrok-free.app'
-)
+OLLAMA_API_BASE = os.environ['OLLAMA_API_BASE']
 
 root_agent = Agent(
     model=LiteLlm(

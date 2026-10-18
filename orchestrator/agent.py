@@ -5,9 +5,7 @@ from google.adk.agents.llm_agent import Agent
 from google.adk.models.lite_llm import LiteLlm
 
 # Ngrok base URL of the remote Ollama server. Override via OLLAMA_API_BASE in .env.
-OLLAMA_API_BASE = os.getenv(
-    'OLLAMA_API_BASE', 'https://6699-136-85-135-191.ngrok-free.app'
-)
+OLLAMA_API_BASE = os.environ['OLLAMA_API_BASE']
 
 research_agent = importlib.import_module(
     '.research-agent.agent', package=__package__
